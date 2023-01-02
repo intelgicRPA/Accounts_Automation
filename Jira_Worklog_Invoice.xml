@@ -1,0 +1,1605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="a70f4838-0376-4f12-9d3d-031297803155" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="Imported From Appstango_JiraWorkLog_QBInvoice.xml @ 06/16/2021 2:55:40 PM" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="56affa72-1139-4bfd-8f2b-112c8a51c81c" CommandName="VariableCommand" IsCommented="true" SelectionName="Set Variable" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vDrive" v_Input="C:" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="93494d64-f99f-4c48-b02c-440b6a05854e" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="DTProjectList" v_Input="vDTProjectList" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="1ebaddf1-ca5c-423a-8b2c-de205575c783" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" v_Comment="------------Path of Project List Excel file....----------------" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="c016c03a-202c-41ed-9660-7fe4a0c3abab" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vProjectPath" v_Input="C:\Intelgic\Active_Project_List.xlsx" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelCreateDataSetCommand" CommandID="ec8c06fd-8c22-43f3-841a-f2a3002b40ea" CommandName="ExcelCreateDatasetCommand" IsCommented="false" SelectionName="Create Excel Data Table" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="DTProjectList" v_FilePath="[vProjectPath]" v_SheetName="Sheet1" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="98c49eb7-8f8e-4333-9635-cfd3bee504de" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vListIndex" v_Input="1" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="BeginExcelDatasetLoopCommand" CommandID="074111cd-752d-4357-802b-36e37aacf943" CommandName="BeginExcelDataSetLoopCommand" IsCommented="false" SelectionName="Loop Data Table" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="DTProjectList" />
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="BeginIfCommand" CommandID="450444b6-cb2c-414a-933a-09fd06f8f60b" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Value">
+          <v_IfActionParameterTable>
+            <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+              <xs:element name="I6AcPionPara7Table042621.050715">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                    <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I6AcPionPara7Table042621.050715" msdata:UseCurrentLocale="true">
+                <xs:complexType>
+                  <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="I6AcPionPara7Table042621.050715" />
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:schema>
+            <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+              <DocumentElement>
+                <I6AcPionPara7Table042621.050715 diffgr:id="I6AcPionPara7Table042621.0507151" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>[vListIndex]</Parameter_x0020_Value>
+                </I6AcPionPara7Table042621.050715>
+                <I6AcPionPara7Table042621.050715 diffgr:id="I6AcPionPara7Table042621.0507152" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>is greater than</Parameter_x0020_Value>
+                </I6AcPionPara7Table042621.050715>
+                <I6AcPionPara7Table042621.050715 diffgr:id="I6AcPionPara7Table042621.0507153" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>1</Parameter_x0020_Value>
+                </I6AcPionPara7Table042621.050715>
+              </DocumentElement>
+            </diffgr:diffgram>
+          </v_IfActionParameterTable>
+        </ScriptCommand>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="fd729574-b3f4-47f3-b2e5-f5997ba498d7" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" v_Comment="------Read Project Name, Client Name And StartDate-----------" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="983c597f-de45-46f2-bd8e-426dfa46f82d" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="DTProjectList" v_ColumnParseType="By Column Index" v_ColumnParameter="0" v_applyToVariableName="vCompanyName" v_SortType="Default" v_SpecifiedRow="N/A" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="ef2c5bf7-6e4d-47fc-b560-53323a3a20f6" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="DTProjectList" v_ColumnParseType="By Column Index" v_ColumnParameter="1" v_applyToVariableName="vClientName" v_SortType="Default" v_SpecifiedRow="N/A" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="108a8518-d9f5-417d-9513-e90f8952adf8" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="13" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="DTProjectList" v_ColumnParseType="By Column Index" v_ColumnParameter="2" v_applyToVariableName="vProjectName" v_SortType="Default" v_SpecifiedRow="N/A" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="b7c4c457-a8d7-4c59-9cd4-851f686c19ee" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="14" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="DTProjectList" v_ColumnParseType="By Column Index" v_ColumnParameter="3" v_applyToVariableName="vRate" v_SortType="Default" v_SpecifiedRow="N/A" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="08bbfb67-2d11-453e-baa1-d06104058909" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="DTProjectList" v_ColumnParseType="By Column Index" v_ColumnParameter="4" v_applyToVariableName="vBillPeriod" v_SortType="Default" v_SpecifiedRow="N/A" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="9ebf3343-d104-4d01-8e96-c58f7984f28b" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="DTProjectList" v_ColumnParseType="By Column Index" v_ColumnParameter="5" v_applyToVariableName="vStartDate" v_SortType="Default" v_SpecifiedRow="N/A" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="f382bacf-d68d-4dbd-87f4-0d7924ec32c5" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="17" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="DTProjectList" v_ColumnParseType="By Column Index" v_ColumnParameter="6" v_applyToVariableName="vProjectURL" v_SortType="Default" v_SpecifiedRow="N/A" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="8f3a45e1-4f09-4aaf-997c-64b03b212b03" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="18" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="DTProjectList" v_ColumnParseType="By Column Index" v_ColumnParameter="7" v_applyToVariableName="vWorkLogURL" v_SortType="Default" v_SpecifiedRow="N/A" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="109878f1-e76e-4377-a0d5-92a5c5a00d14" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="19" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="DTProjectList" v_ColumnParseType="By Column Index" v_ColumnParameter="8" v_applyToVariableName="vEmailTo" v_SortType="Default" v_SpecifiedRow="N/A" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="f1673778-0e98-4fda-97eb-fa281f287460" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="20" PauseBeforeExeucution="false" v_Comment="-----Convert Start Date formate and get End Date-----------" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="MessageBoxCommand" CommandID="d46d5fbe-34af-4bfe-bd70-9a5f199331b7" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="21" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vStartDate]" v_AutoCloseAfter="0" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="FormatDataCommand" CommandID="2b2c789e-06c5-4591-967f-751ad66962d4" CommandName="FormatDataCommand" IsCommented="false" SelectionName="Data Type Conversion" DefaultPause="0" LineNumber="22" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[DateTime.Now]" v_FormatType="Date" v_ToStringFormat="yyyy-MM-dd" v_applyToVariableName="vTodaysDate" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="FormatDataCommand" CommandID="4a3c74d9-7cd3-40f1-8543-f622466048be" CommandName="FormatDataCommand" IsCommented="false" SelectionName="Data Type Conversion" DefaultPause="0" LineNumber="23" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vStartDate]" v_FormatType="Date" v_ToStringFormat="yyyy-MM-dd" v_applyToVariableName="vStartDate" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="DateCalculationCommand" CommandID="5e75b30f-ab11-42ef-91dd-45246263656a" CommandName="DateCalculationCommand" IsCommented="false" SelectionName="Date Calculation" DefaultPause="0" LineNumber="24" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vStartDate]" v_CalculationMethod="Add Days" v_Increment="6" v_ToStringFormat="yyyy-MM-dd" v_applyToVariableName="vEndDate" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="BeginIfCommand" CommandID="4873fa1e-328b-45c2-9a05-c60a724770db" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="25" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Date Compare">
+            <v_IfActionParameterTable>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="I6AcPionPara7Table042621.050715">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I6AcPionPara7Table042621.050715" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="I6AcPionPara7Table042621.050715" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                <DocumentElement>
+                  <I6AcPionPara7Table042621.050715 diffgr:id="I6AcPionPara7Table042621.0507151" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>[vStartDate]</Parameter_x0020_Value>
+                  </I6AcPionPara7Table042621.050715>
+                  <I6AcPionPara7Table042621.050715 diffgr:id="I6AcPionPara7Table042621.0507152" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>is less than or equal to</Parameter_x0020_Value>
+                  </I6AcPionPara7Table042621.050715>
+                  <I6AcPionPara7Table042621.050715 diffgr:id="I6AcPionPara7Table042621.0507153" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>[vTodaysDate]</Parameter_x0020_Value>
+                  </I6AcPionPara7Table042621.050715>
+                </DocumentElement>
+              </diffgr:diffgram>
+            </v_IfActionParameterTable>
+          </ScriptCommand>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="7e955f9e-badd-485d-8ebb-d49287587b2d" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="26" PauseBeforeExeucution="false" v_Comment="Items in this section will run if the statement is true" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="110726a5-740e-43da-8f76-546dacdde8ef" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="27" PauseBeforeExeucution="false" v_Comment="Provide Jira ID and password in the respective variables" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="9a047580-6e1a-48ef-918e-9b7a090df3bd" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="28" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vJiraID" v_Input="jiradigi@gmal.com" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="113c1135-f0b9-4be5-a58e-158736f809aa" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="29" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vJiraPWD" v_Input="DigiTa!453" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="6724e7dc-542f-4e70-819f-a6a9a8aec23a" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="30" PauseBeforeExeucution="false" v_Comment="Navigate to Jira for login window" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserCreateCommand" CommandID="bf2786d5-5058-4b30-b7b6-c7103aefdff4" CommandName="SeleniumBrowserCreateCommand" IsCommented="false" SelectionName="Create Browser" DefaultPause="0" LineNumber="31" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_InstanceTracking="Forget Instance" v_BrowserWindowOption="Normal" v_EngineType="Chrome" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserNavigateURLCommand" CommandID="0827e938-8f3b-4d88-aafb-60b8d60698fd" CommandName="SeleniumBrowserNavigateURLCommand" IsCommented="true" SelectionName="Navigate to URL" DefaultPause="0" LineNumber="32" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_URL="https://jira.com/" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserNavigateURLCommand" CommandID="6c7886cc-5507-4aa8-a1ff-003ddafdb596" CommandName="SeleniumBrowserNavigateURLCommand" IsCommented="false" SelectionName="Navigate to URL" DefaultPause="0" LineNumber="33" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_URL="[vProjectURL]" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="e955ccd3-84cb-4fa2-a3e1-0820f2817bb8" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="34" PauseBeforeExeucution="false" v_Comment="Enter User Name for login" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="99d8fdd8-c497-4620-9ee4-cdeec51cc7ec" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="35" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By ID" v_SeleniumSearchParameter="username">
+              <v_SeleniumElementAction>Wait For Element To Exist</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Timeout (Seconds)</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>40</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="54b24926-3ad1-45de-8e1a-0e1fffaae8c2" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="36" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By ID" v_SeleniumSearchParameter="username">
+              <v_SeleniumElementAction>Set Text</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Text To Set</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>[vJiraID]</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604002" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Clear Element Before Setting Text</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>No</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="9894ca63-da68-4782-aa87-59e6d3cfb426" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="37" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By ID" v_SeleniumSearchParameter="login-submit">
+              <v_SeleniumElementAction>Left Click</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>X Adjustment</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>0</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604002" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Y Adjustment</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>0</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="45acc26f-4485-4c4a-9304-15e337774706" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="38" PauseBeforeExeucution="false" v_Comment="Enter Password for login" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="MessageBoxCommand" CommandID="0fd2239f-dfc8-410e-8af8-67fae1a6a1a0" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="39" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vJiraPWD].ToString()" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="1ded6078-9502-4712-b528-a7ac95b0a68b" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="40" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By ID" v_SeleniumSearchParameter="password">
+              <v_SeleniumElementAction>Wait For Element To Exist</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Timeout (Seconds)</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>40</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="d09be91b-082d-4d7e-b1bd-2b64e0819db9" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="41" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By ID" v_SeleniumSearchParameter="password">
+              <v_SeleniumElementAction>Set Text</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Text To Set</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>[vJiraPWD].ToString()</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604002" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Clear Element Before Setting Text</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>No</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="25a3d100-7d1a-4826-8d22-93f631aba1eb" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="42" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By ID" v_SeleniumSearchParameter="login-submit">
+              <v_SeleniumElementAction>Left Click</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>X Adjustment</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>0</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604002" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Y Adjustment</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>0</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="72d32d75-377c-4b07-919a-de747f012a83" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="43" PauseBeforeExeucution="false" v_Comment="Click Jira Software to List All projetc" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="b2f24fe4-3ca1-49d1-8083-91da5dfde258" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="44" PauseBeforeExeucution="false" v_Comment="Search for the project by name" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="e24dd0d8-90b5-4a46-ba89-1cbb300985a7" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="45" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By Name" v_SeleniumSearchParameter="search">
+              <v_SeleniumElementAction>Wait For Element To Exist</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Timeout (Seconds)</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>60</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="58785cb8-cc77-4fa9-bb90-1901dff1d7f5" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="46" PauseBeforeExeucution="false" v_Comment="Click on Project Name to get work log" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SendAdvancedKeyStrokesCommand" CommandID="8982e882-d676-472a-8587-ca8c9f865bb3" CommandName="SendAdvancedKeyStrokesCommand" IsCommented="true" SelectionName="Send Advanced Hotkey" DefaultPause="0" LineNumber="47" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window">
+              <v_KeyActions>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="SendAdvancedKeyStrokesCommand042721.065334">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Key" type="xs:string" minOccurs="0" />
+                        <xs:element name="Action" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SendAdvancedKeyStrokesCommand042721.065334" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="SendAdvancedKeyStrokesCommand042721.065334" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <SendAdvancedKeyStrokesCommand042721.065334 diffgr:id="SendAdvancedKeyStrokesCommand042721.0653341" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Key>Down Arrow [Down]</Key>
+                      <Action>Key Press (Down + Up)</Action>
+                    </SendAdvancedKeyStrokesCommand042721.065334>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_KeyActions>
+              <v_KeyUpDefault>Yes</v_KeyUpDefault>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="b24c9865-cc82-491f-bda3-ab12daf12453" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="48" PauseBeforeExeucution="false" v_Comment="Click on Worklog menu to get the Work log" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserNavigateURLCommand" CommandID="c9422c93-2a61-4942-8130-5c22d41e2e23" CommandName="SeleniumBrowserNavigateURLCommand" IsCommented="false" SelectionName="Navigate to URL" DefaultPause="0" LineNumber="49" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_URL="[vWorkLogURL]" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="fa997446-fe39-4626-b461-0c5686a3d933" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="50" PauseBeforeExeucution="false" v_Comment="Click Date search field" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="PauseCommand" CommandID="b55427b4-6fe6-464f-8ed2-1de782135f6f" CommandName="PauseCommand" IsCommented="false" SelectionName="Pause Script" DefaultPause="0" LineNumber="51" PauseBeforeExeucution="false" CommandEnabled="true" v_PauseLength="7000" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="a7a14f58-cfa0-4d8a-8522-0b27fef8db68" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="52" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By Tag Name" v_SeleniumSearchParameter="iframe">
+              <v_SeleniumElementAction>Switch to frame</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="PauseCommand" CommandID="505956f4-363a-4c3f-adba-bc5920d4b39d" CommandName="PauseCommand" IsCommented="true" SelectionName="Pause Script" DefaultPause="0" LineNumber="53" PauseBeforeExeucution="false" CommandEnabled="true" v_PauseLength="7000" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="d98798a5-0873-4444-81f5-6eee6901fbb2" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="54" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By XPath" v_SeleniumSearchParameter="//*[@id=&quot;date_range&quot;]">
+              <v_SeleniumElementAction>Wait For Element To Exist</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Timeout (Seconds)</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>40</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="MessageBoxCommand" CommandID="bd55113e-c080-4a33-8863-64edc6c4547a" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="55" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="Before Click" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="f7f607f6-8f78-4cba-a1d4-09512676f4c0" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="56" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By XPath" v_SeleniumSearchParameter="//*[@id=&quot;date_range&quot;]">
+              <v_SeleniumElementAction>Invoke Click</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="d0095e64-c845-4eb1-a629-0ee52f8a94c8" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="57" PauseBeforeExeucution="false" v_Comment="Enter Start date and end date to search" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="f256e6bf-0680-4944-a144-7956fcad38eb" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="58" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By Name" v_SeleniumSearchParameter="daterangepicker_start">
+              <v_SeleniumElementAction>Wait For Element To Exist</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Timeout (Seconds)</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>20</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="6a18cf7a-1132-4433-a420-9aa756dcbe0f" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="59" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By Name" v_SeleniumSearchParameter="daterangepicker_start">
+              <v_SeleniumElementAction>Clear Element</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="6b592f26-b16b-4256-aa8f-5faaf07644de" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="60" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By Name" v_SeleniumSearchParameter="daterangepicker_start">
+              <v_SeleniumElementAction>Set Text</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Text To Set</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>[vStartDate].ToString()</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604002" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Clear Element Before Setting Text</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>No</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="9da53d52-5c87-422d-9164-2989969f916d" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="61" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By Name" v_SeleniumSearchParameter="daterangepicker_end">
+              <v_SeleniumElementAction>Clear Element</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="0c687515-eb9b-4231-8dac-4a790e3a1bd1" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="62" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By Name" v_SeleniumSearchParameter="daterangepicker_end">
+              <v_SeleniumElementAction>Set Text</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Text To Set</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>[vEndDate].ToString()</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604002" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Clear Element Before Setting Text</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>No</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="44f39e7e-7e7f-4a95-94a7-ffa36bc11270" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="63" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By XPath" v_SeleniumSearchParameter="/html/body/div[1]/form/div[3]/div/button[1]">
+              <v_SeleniumElementAction>Invoke Click</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SendAdvancedKeyStrokesCommand" CommandID="acff0170-59d1-4aa4-818e-20c9dc64bb2c" CommandName="SendAdvancedKeyStrokesCommand" IsCommented="true" SelectionName="Send Advanced Hotkey" DefaultPause="0" LineNumber="64" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window">
+              <v_KeyActions>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="SendAdvancedKeyStrokesCommand042721.065334">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Key" type="xs:string" minOccurs="0" />
+                        <xs:element name="Action" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SendAdvancedKeyStrokesCommand042721.065334" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="SendAdvancedKeyStrokesCommand042721.065334" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <SendAdvancedKeyStrokesCommand042721.065334 diffgr:id="SendAdvancedKeyStrokesCommand042721.0653341" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Key>Tab [Tab]</Key>
+                      <Action>Key Press (Down + Up)</Action>
+                    </SendAdvancedKeyStrokesCommand042721.065334>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_KeyActions>
+              <v_KeyUpDefault>Yes</v_KeyUpDefault>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SendAdvancedKeyStrokesCommand" CommandID="a8c78f60-2e93-4502-acf6-5b53b1924806" CommandName="SendAdvancedKeyStrokesCommand" IsCommented="true" SelectionName="Send Advanced Hotkey" DefaultPause="0" LineNumber="65" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window">
+              <v_KeyActions>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="SendAdvancedKeyStrokesCommand042721.065334">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Key" type="xs:string" minOccurs="0" />
+                        <xs:element name="Action" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SendAdvancedKeyStrokesCommand042721.065334" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="SendAdvancedKeyStrokesCommand042721.065334" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <SendAdvancedKeyStrokesCommand042721.065334 diffgr:id="SendAdvancedKeyStrokesCommand042721.0653341" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Key>Enter [Return]</Key>
+                      <Action>Key Press (Down + Up)</Action>
+                    </SendAdvancedKeyStrokesCommand042721.065334>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_KeyActions>
+              <v_KeyUpDefault>Yes</v_KeyUpDefault>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="6638eea1-701d-4e13-a7b6-6ab1522d7596" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="66" PauseBeforeExeucution="false" v_Comment="Click Export Button to Export excel" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="PauseCommand" CommandID="30ea9238-3d75-4a49-ad74-29dbba5d12c8" CommandName="PauseCommand" IsCommented="false" SelectionName="Pause Script" DefaultPause="0" LineNumber="67" PauseBeforeExeucution="false" CommandEnabled="true" v_PauseLength="4000" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="0d9173ab-2113-462c-b2aa-7185852872fe" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="68" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By ID" v_SeleniumSearchParameter="export-xlsx">
+              <v_SeleniumElementAction>Wait For Element To Exist</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <WebActionParamTable042621.060400 diffgr:id="WebActionParamTable042621.0604001" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Timeout (Seconds)</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>20</Parameter_x0020_Value>
+                    </WebActionParamTable042621.060400>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserElementActionCommand" CommandID="609b04d6-41af-457a-9798-b735055aa8c4" CommandName="SeleniumBrowserElementActionCommand" IsCommented="false" SelectionName="Element Action" DefaultPause="0" LineNumber="69" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" v_SeleniumSearchType="Find Element By ID" v_SeleniumSearchParameter="export-xlsx">
+              <v_SeleniumElementAction>Invoke Click</v_SeleniumElementAction>
+              <v_WebActionParameterTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="WebActionParamTable042621.060400">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebActionParamTable042621.060400" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="WebActionParamTable042621.060400" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_WebActionParameterTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SendMouseMoveCommand" CommandID="d82ebb05-bad6-4fd1-ae93-d9b44f114460" CommandName="SendMouseMoveCommand" IsCommented="true" SelectionName="Mouse Move Event" DefaultPause="0" LineNumber="70" PauseBeforeExeucution="false" CommandEnabled="true" v_XMousePosition="890" v_YMousePosition="224" v_MouseClick="Left Click" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="PauseCommand" CommandID="b54d260f-427e-4ad7-8c55-f40cf12b06eb" CommandName="PauseCommand" IsCommented="false" SelectionName="Pause Script" DefaultPause="0" LineNumber="71" PauseBeforeExeucution="false" CommandEnabled="true" v_PauseLength="4000" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="0acda267-e366-4c51-ae9b-bd52740e2787" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="72" PauseBeforeExeucution="false" v_Comment="Logout And Close browser" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SeleniumBrowserCloseCommand" CommandID="58f5f21d-bb45-4d57-98d8-1b3e2a297221" CommandName="SeleniumBrowserCloseCommand" IsCommented="false" SelectionName="Close Browser" DefaultPause="0" LineNumber="73" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="JiraWeb" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="fc16cd7e-2191-4449-a273-a66274aa8978" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="74" PauseBeforeExeucution="false" v_Comment="////////------Bellow Section Is for Excel File Rearrangement After download-------------------------/////" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="67c65686-e957-40db-bfbe-c395d281f1d4" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="75" PauseBeforeExeucution="false" v_Comment="DownLoad Directory path Global variable" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="79d0823a-051c-49d1-b716-4765309aeccc" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="76" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vDownloadPath" v_Input="C:\Users\Intelgic\Downloads" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="38affeb9-b08e-42a9-9b55-5e0b96fc9f1c" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="77" PauseBeforeExeucution="false" v_Comment="Global SheetName Variable" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="82f67953-6884-4b4b-9820-98e5b7215a0c" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="78" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vSheetName" v_Input="Breakdown" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="e034f67c-84b1-4cb0-9f8a-01c556f313ce" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="79" PauseBeforeExeucution="false" v_Comment="Read Downlad folder to get Current Worklog file" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="3661fb56-7d77-41ca-a922-b87037d2f6e7" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="80" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="dtFileList" v_Input="vFilesTBL" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ReadFolderCommand" CommandID="23031884-9de3-4f54-a2f7-a9bc03809d61" CommandName="ReadFolderCommand" IsCommented="false" SelectionName="Read Folder" DefaultPause="0" LineNumber="81" PauseBeforeExeucution="false" CommandEnabled="true" v_SourceFilePath="[vDownloadPath]" v_ApplyToUserVariable="dtFileList" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="6340c087-13bc-480e-bcc3-aaa6cc4de3f3" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="82" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="dtFilterFileList" v_Input="vFilesFilterTBL" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="FilterDataTableCommand" CommandID="6ad3cc13-0e7f-48b5-a7da-3d8962589acc" CommandName="FilterDataTableCommand" IsCommented="false" SelectionName="Filter Data Table" DefaultPause="0" LineNumber="83" PauseBeforeExeucution="false" CommandEnabled="true" v_DataTableName="dtFileList" v_LogicalOperator="AND" v_DataTabNameOutput="dtFilterFileList">
+              <v_Conditions>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="Para45Table043021.054538">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="ColumnNameOne" type="xs:string" minOccurs="0" />
+                        <xs:element name="Operator" type="xs:string" minOccurs="0" />
+                        <xs:element name="ColumnNameTwo" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Para45Table043021.054538" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="Para45Table043021.054538" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <Para45Table043021.054538 diffgr:id="Para45Table043021.0545381" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <ColumnNameOne>FileName</ColumnNameOne>
+                      <Operator>Start With</Operator>
+                      <ColumnNameTwo>wl</ColumnNameTwo>
+                    </Para45Table043021.054538>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_Conditions>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="29628de2-4e07-48de-b349-33d7e0586675" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="84" PauseBeforeExeucution="false" v_Comment="Read the first file name" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="bfc17dc0-72a4-46bc-9598-6f25c5ce4b02" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="85" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="dtFilterFileList" v_ColumnParseType="By Column Index" v_ColumnParameter="0" v_applyToVariableName="vFileName" v_SortType="Descending" v_ColumnName="CreateDate" v_SpecifiedRow="N/A" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="MessageBoxCommand" CommandID="244479c2-39d3-47c6-b6d0-65d8835b01e8" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="86" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vFileName]" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="PreviewDataTableCommand" CommandID="bf39843a-159e-4761-b22d-737c2be443e1" CommandName="PreviewDataTableCommand" IsCommented="true" SelectionName="Preview Data Table" DefaultPause="0" LineNumber="87" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="dtFilterFileList" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="78f4e1ec-21e2-4164-87fd-fafc4edd79bd" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="88" PauseBeforeExeucution="false" v_Comment="Assign data table to read file" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="0ed404b6-66e9-46c8-8f7f-5d9bf83c5de2" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="89" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="WLTable" v_Input="vTable" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="8e126188-b13a-4790-a21d-b4d7eed6893b" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="90" PauseBeforeExeucution="false" v_Comment="Create Excel datatable" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelCreateDataSetCommand" CommandID="3228bb6e-bf57-4d3c-ae79-04326b1f200b" CommandName="ExcelCreateDatasetCommand" IsCommented="false" SelectionName="Create Excel Data Table" DefaultPause="0" LineNumber="91" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="WLTable" v_FilePath="[vDownloadPath]\[vFileName]" v_SheetName="[vSheetName]" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="4805be4a-a51f-481d-9244-451bf5d4b748" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="92" PauseBeforeExeucution="false" v_Comment="Create Excel Application And Reorder it" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelCreateApplicationCommand" CommandID="ae8d5bbc-993e-40fa-96b3-91a731a9f88c" CommandName="ExcelOpenApplicationCommand" IsCommented="false" SelectionName="Create Excel Application" DefaultPause="0" LineNumber="93" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelOpenWorkbookCommand" CommandID="861a1cef-64dc-4b0b-bf2e-b489fc9e5263" CommandName="ExcelOpenWorkbookCommand" IsCommented="false" SelectionName="Open Workbook" DefaultPause="0" LineNumber="94" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_FilePath="[vDownloadPath]\[vFileName]" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelActivateSheetCommand" CommandID="96ddfcea-3690-49b6-96b4-b663a9e13951" CommandName="ExcelActivateSheetCommand" IsCommented="false" SelectionName="Activate Sheet" DefaultPause="0" LineNumber="95" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_SheetName="[vSheetName]" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelReorderColumnCommand" CommandID="f49c466e-fcac-4e76-86f0-75bbf051d187" CommandName="ExcelReorderColumnCommand" IsCommented="false" SelectionName="Reorder Columns" DefaultPause="0" LineNumber="96" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_SheetName="[vSheetName]" v_SourceRange="F:H" v_DestinationRange="E:G" v_ShiftDirection="Right" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelReorderColumnCommand" CommandID="f419e4a2-9d53-4eed-b400-e3ede602ca3b" CommandName="ExcelReorderColumnCommand" IsCommented="false" SelectionName="Reorder Columns" DefaultPause="0" LineNumber="97" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_SheetName="[vSheetName]" v_SourceRange="B:C" v_DestinationRange="I:J" v_ShiftDirection="Right" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="3964754e-0c70-44b8-98ea-29d79c8881ae" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="98" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vRowIndex" v_Input="1" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="fb993819-e934-4fb8-9fe6-00332d9e1ed3" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="99" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vRowAddIndex" v_Input="1" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="84bc7b57-f383-4301-8e42-eb9a53bc6d03" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="100" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vSumStartIndex" v_Input="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelGetLastRowCommand" CommandID="98fe9a98-dc4c-4412-acad-5fe001cd34f6" CommandName="ExcelGetLastRowCommand" IsCommented="false" SelectionName="Get Last Row Index" DefaultPause="0" LineNumber="101" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_ColumnLetter="A" v_applyToVariableName="vLastRowIndex" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelInsertDeleteRowsCommand" CommandID="e7d7ba95-8a15-4ab1-9f3f-69c8c6a2c85d" CommandName="ExcelInsertDeleteRowsCommand" IsCommented="false" SelectionName="Insert/Delete Rows" DefaultPause="0" LineNumber="102" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_SheetName="[vSheetName]" v_StartPosition="[vLastRowIndex]+1" v_RowNumbers="1" v_Action="Insert" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="0e79b053-aed6-430b-8e9d-f7f0ba6cec9a" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="103" PauseBeforeExeucution="false" v_Comment="Assign Invoice Details Data Table" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="b27073f0-d7e7-41a7-8798-a9e54cf2ad0e" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="104" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="dtInvoiceDetails" v_Input="vdtInvoiceDetails" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="d3b43b34-832d-4d9a-88a3-100fa2123134" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="105" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vTableRow" v_Input="" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="4efc87a3-0494-4109-be3b-41f83bc222e0" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="106" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vDescription" v_Input="" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="PreviewDataTableCommand" CommandID="bba1e00e-975d-4882-8949-4da853cba954" CommandName="PreviewDataTableCommand" IsCommented="true" SelectionName="Preview Data Table" DefaultPause="0" LineNumber="107" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="WLTable" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="BeginExcelDatasetLoopCommand" CommandID="7a5fcb9d-62e8-419e-a2d8-34773c3c9348" CommandName="BeginExcelDataSetLoopCommand" IsCommented="false" SelectionName="Loop Data Table" DefaultPause="0" LineNumber="108" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="WLTable" />
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="CommentCommand" CommandID="ca1569cf-72a2-4c43-bf0a-b4af9ede5786" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="109" PauseBeforeExeucution="false" v_Comment="Skipping first Row" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="BeginIfCommand" CommandID="3b3dbab7-7ab0-461f-afde-f7afe79e9819" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="110" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Value">
+                <v_IfActionParameterTable>
+                  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                    <xs:element name="I7AcPionPara25Table043021.012512">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                          <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I7AcPionPara25Table043021.012512" msdata:UseCurrentLocale="true">
+                      <xs:complexType>
+                        <xs:choice minOccurs="0" maxOccurs="unbounded">
+                          <xs:element ref="I7AcPionPara25Table043021.012512" />
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:schema>
+                  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                    <DocumentElement>
+                      <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125121" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                        <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                        <Parameter_x0020_Value>[vRowIndex]</Parameter_x0020_Value>
+                      </I7AcPionPara25Table043021.012512>
+                      <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125122" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                        <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                        <Parameter_x0020_Value>is greater than</Parameter_x0020_Value>
+                      </I7AcPionPara25Table043021.012512>
+                      <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125123" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                        <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                        <Parameter_x0020_Value>1</Parameter_x0020_Value>
+                      </I7AcPionPara25Table043021.012512>
+                    </DocumentElement>
+                  </diffgr:diffgram>
+                </v_IfActionParameterTable>
+              </ScriptCommand>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="BeginIfCommand" CommandID="f333e540-ec3e-4511-b167-c45ab9661537" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="111" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Value">
+                  <v_IfActionParameterTable>
+                    <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                      <xs:element name="I7AcPionPara25Table043021.012512">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                            <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I7AcPionPara25Table043021.012512" msdata:UseCurrentLocale="true">
+                        <xs:complexType>
+                          <xs:choice minOccurs="0" maxOccurs="unbounded">
+                            <xs:element ref="I7AcPionPara25Table043021.012512" />
+                          </xs:choice>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:schema>
+                    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                      <DocumentElement>
+                        <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125121" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                          <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                          <Parameter_x0020_Value>[vSumStartIndex]</Parameter_x0020_Value>
+                        </I7AcPionPara25Table043021.012512>
+                        <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125122" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                          <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                          <Parameter_x0020_Value>is equal to</Parameter_x0020_Value>
+                        </I7AcPionPara25Table043021.012512>
+                        <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125123" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                          <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                          <Parameter_x0020_Value>0</Parameter_x0020_Value>
+                        </I7AcPionPara25Table043021.012512>
+                      </DocumentElement>
+                    </diffgr:diffgram>
+                  </v_IfActionParameterTable>
+                </ScriptCommand>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="VariableCommand" CommandID="8a419297-92be-48e5-9581-056039d040d6" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="112" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vSumStartIndex" v_Input="[vRowAddIndex]" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="EndIfCommand" CommandID="22cca683-31e2-4c1b-ae68-903d08a38cf9" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="113" PauseBeforeExeucution="false" CommandEnabled="true" />
+                </AdditionalScriptCommands>
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="CommentCommand" CommandID="2829e700-b0ed-4509-b342-bf3500f85f3f" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="114" PauseBeforeExeucution="false" v_Comment="Items in this section will run if the statement is true" CommandEnabled="true" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="f89b0c45-fea8-4fbf-a53e-577dda7861f1" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="115" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="WLTable" v_ColumnParseType="By Column Index" v_ColumnParameter="0" v_applyToVariableName="vWorkLogBy" v_SortType="Default" v_SpecifiedRow="N/A" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="0c35fef4-bf4b-4797-8c7b-07d58dcabf84" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="116" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="WLTable" v_ColumnParseType="By Column Index" v_ColumnParameter="1" v_applyToVariableName="vIssue" v_SortType="Default" v_SpecifiedRow="N/A" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="172aca44-f09d-44e2-a000-4dfcc108be8f" CommandName="ParseRowCommand" IsCommented="true" SelectionName="Read Table" DefaultPause="0" LineNumber="117" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="WLTable" v_ColumnParseType="By Column Index" v_ColumnParameter="2" v_applyToVariableName="vWorkLogDate" v_SortType="Default" v_SpecifiedRow="N/A" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="c8f7fe01-f161-4544-ab47-f139bc27159d" CommandName="ParseRowCommand" IsCommented="true" SelectionName="Read Table" DefaultPause="0" LineNumber="118" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="WLTable" v_ColumnParseType="By Column Index" v_ColumnParameter="3" v_applyToVariableName="vHours" v_SortType="Default" v_SpecifiedRow="N/A" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="ExcelGetCellCommand" CommandID="f8cbd440-8991-4f77-bc48-8a2aa3116afc" CommandName="ExcelGetCellCommand" IsCommented="false" SelectionName="Get Cell" DefaultPause="0" LineNumber="119" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_ExcelCellAddress="C[vRowAddIndex]" v_userVariableName="vWorkLogDate" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="ExcelGetCellCommand" CommandID="786d7aca-087d-41dd-9890-0bbfbbbed310" CommandName="ExcelGetCellCommand" IsCommented="false" SelectionName="Get Cell" DefaultPause="0" LineNumber="120" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_ExcelCellAddress="D[vRowAddIndex]" v_userVariableName="vHours" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="CommentCommand" CommandID="2150a395-4a3c-487f-8f57-9ef9bbac1411" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="121" PauseBeforeExeucution="false" v_Comment="Create Description to add in table row" CommandEnabled="true" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="VariableCommand" CommandID="b7ac326b-75d1-47b8-8d45-daddd0040ab2" CommandName="VariableCommand" IsCommented="true" SelectionName="Set Variable" DefaultPause="0" LineNumber="122" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vDescription" v_Input="[vDescription][vIssue]    [vWorkLogDate].ToString()    [vHours].ToString() {Enter}" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="BeginIfCommand" CommandID="82fde55f-92b3-4b18-b49f-5b2fa277b3c1" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="123" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Value">
+                  <v_IfActionParameterTable>
+                    <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                      <xs:element name="I7AcPionPara25Table043021.012512">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                            <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I7AcPionPara25Table043021.012512" msdata:UseCurrentLocale="true">
+                        <xs:complexType>
+                          <xs:choice minOccurs="0" maxOccurs="unbounded">
+                            <xs:element ref="I7AcPionPara25Table043021.012512" />
+                          </xs:choice>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:schema>
+                    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                      <DocumentElement>
+                        <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125121" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                          <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                          <Parameter_x0020_Value>[vRowIndex]</Parameter_x0020_Value>
+                        </I7AcPionPara25Table043021.012512>
+                        <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125122" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                          <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                          <Parameter_x0020_Value>is not equal to</Parameter_x0020_Value>
+                        </I7AcPionPara25Table043021.012512>
+                        <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125123" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                          <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                          <Parameter_x0020_Value>[vLastRowIndex]</Parameter_x0020_Value>
+                        </I7AcPionPara25Table043021.012512>
+                      </DocumentElement>
+                    </diffgr:diffgram>
+                  </v_IfActionParameterTable>
+                </ScriptCommand>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="726a397a-3cdd-40df-92fd-8e74d6b0a8a0" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="124" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="WLTable" v_ColumnParseType="By Column Index" v_ColumnParameter="0" v_applyToVariableName="vName" v_SortType="Default" v_SpecifiedRow="[vRowIndex]" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="MessageBoxCommand" CommandID="4eb8c0f7-aef5-4140-ab74-23f68b41d7ce" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="125" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vRowIndex]" v_AutoCloseAfter="0" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="BeginIfCommand" CommandID="265fc916-822d-4015-98de-790e340aee45" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="126" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Value">
+                    <v_IfActionParameterTable>
+                      <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                        <xs:element name="I7AcPionPara25Table043021.012512">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                              <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                        <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I7AcPionPara25Table043021.012512" msdata:UseCurrentLocale="true">
+                          <xs:complexType>
+                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                              <xs:element ref="I7AcPionPara25Table043021.012512" />
+                            </xs:choice>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:schema>
+                      <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                        <DocumentElement>
+                          <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125121" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                            <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                            <Parameter_x0020_Value>[vWorkLogBy]</Parameter_x0020_Value>
+                          </I7AcPionPara25Table043021.012512>
+                          <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125122" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                            <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                            <Parameter_x0020_Value>is not equal to</Parameter_x0020_Value>
+                          </I7AcPionPara25Table043021.012512>
+                          <I7AcPionPara25Table043021.012512 diffgr:id="I7AcPionPara25Table043021.0125123" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                            <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                            <Parameter_x0020_Value>[vName]</Parameter_x0020_Value>
+                          </I7AcPionPara25Table043021.012512>
+                        </DocumentElement>
+                      </diffgr:diffgram>
+                    </v_IfActionParameterTable>
+                  </ScriptCommand>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="VariableCommand" CommandID="c6c41c4f-76f9-46de-b806-d60f6811b3b0" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="127" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vSumIndex" v_Input="[vRowAddIndex]+1" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="ExcelInsertDeleteRowsCommand" CommandID="dfa77f45-3385-4174-bc8a-fe9c95570d43" CommandName="ExcelInsertDeleteRowsCommand" IsCommented="false" SelectionName="Insert/Delete Rows" DefaultPause="0" LineNumber="128" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_SheetName="[vSheetName]" v_StartPosition="[vRowAddIndex]+1" v_RowNumbers="2" v_Action="Insert" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="ExcelSetCellCommand" CommandID="f0bfffb9-80b3-480c-b718-38622f5f024b" CommandName="ExcelSetCellCommand" IsCommented="false" SelectionName="Set Cell" DefaultPause="0" LineNumber="129" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_TextToSet="=SUM(D[vSumStartIndex]:D[vRowAddIndex])" v_ExcelCellAddress="D[vSumIndex]" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="ExcelSetRangeHighlightColorCommand" CommandID="dca574c8-fe22-4a51-97c9-1f9529247250" CommandName="ExcelSetRangeHighlightColorCommand" IsCommented="false" SelectionName="Set Range Highlight Color" DefaultPause="0" LineNumber="130" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_SheetName="[vSheetName]" v_SourceRange="D[vSumIndex]" v_Color="yellow" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="VariableCommand" CommandID="5d4ea732-68a1-4f32-957e-e7fd73e4c8eb" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="131" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vRowAddIndex" v_Input="[vRowAddIndex]+2" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="VariableCommand" CommandID="23db7d0a-36a6-46cb-9475-1d8b78c62874" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="132" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vSumStartIndex" v_Input="0" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="CommentCommand" CommandID="2f910080-3b1b-404a-a8b2-be10a3debf81" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="133" PauseBeforeExeucution="false" v_Comment="Create jason Array to add in table row" CommandEnabled="true" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="ExcelGetCellCommand" CommandID="18957fe2-3afc-4e9b-b8a5-4cc6d7ec86f2" CommandName="ExcelGetCellCommand" IsCommented="false" SelectionName="Get Cell" DefaultPause="0" LineNumber="134" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_ExcelCellAddress="D[vSumIndex]" v_userVariableName="vTotalHrs" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="VariableCommand" CommandID="44ebef47-5e45-45cf-aa3f-ffe3c5553521" CommandName="VariableCommand" IsCommented="true" SelectionName="Set Variable" DefaultPause="0" LineNumber="135" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vDescription" v_Input="[vWorkLogBy] {Enter} Issue    Worklog Date    Time Spent (Hours) {Enter} [vDescription] {Enter}          [vTotalHrs]" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="VariableCommand" CommandID="4dbc8420-5999-4f51-b3f4-eb943fc1bf33" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="136" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vDescription" v_Input="[vWorkLogBy], (Total Hours: [vTotalHrs])" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="VariableCommand" CommandID="d1d500cf-a5eb-471d-9489-cc298cc83e80" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="137" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vTableRow" v_Input="[vTableRow] {'Description':'[vDescription]','QTY':'[vTotalHrs]','Rate':'[vRate]'}," />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="VariableCommand" CommandID="628f3e76-1853-4e3c-beea-c34c71b46841" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="138" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vDescription" v_Input="" />
+                  </AdditionalScriptCommands>
+                  <AdditionalScriptCommands>
+                    <ScriptCommand xsi:type="EndIfCommand" CommandID="4d4efe0a-5720-40e9-ac9e-a70e37f75cd4" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="139" PauseBeforeExeucution="false" CommandEnabled="true" />
+                  </AdditionalScriptCommands>
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="ElseCommand" CommandID="a4cc4285-abb6-463c-8f26-e079dd26be62" CommandName="ElseCommand" IsCommented="false" SelectionName="Else" DefaultPause="0" LineNumber="140" PauseBeforeExeucution="false" CommandEnabled="true" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="ExcelGetLastRowCommand" CommandID="4f929b40-f946-4343-9ada-7c05fb73fb46" CommandName="ExcelGetLastRowCommand" IsCommented="false" SelectionName="Get Last Row Index" DefaultPause="0" LineNumber="141" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_ColumnLetter="A" v_applyToVariableName="vLastRowIndex" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="VariableCommand" CommandID="9daa9726-1946-4747-860e-edd09ff37d4e" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="142" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vSumIndex" v_Input="[vLastRowIndex]+1" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="ExcelSetCellCommand" CommandID="878756a2-2294-4a31-bf6c-3d2018060987" CommandName="ExcelSetCellCommand" IsCommented="false" SelectionName="Set Cell" DefaultPause="0" LineNumber="143" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_TextToSet="=SUM(D[vSumStartIndex]:D[vLastRowIndex])" v_ExcelCellAddress="D[vSumIndex]" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="ExcelSetRangeHighlightColorCommand" CommandID="3ca34060-0321-4394-8926-16e1d956b641" CommandName="ExcelSetRangeHighlightColorCommand" IsCommented="false" SelectionName="Set Range Highlight Color" DefaultPause="0" LineNumber="144" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_SheetName="[vSheetName]" v_SourceRange="D[vSumIndex]" v_Color="yellow" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="CommentCommand" CommandID="7f1d9b1b-f55c-45f3-81a3-8efe9f9cf5f9" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="145" PauseBeforeExeucution="false" v_Comment="Create jason Array to add in table row" CommandEnabled="true" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="ExcelGetCellCommand" CommandID="f27f4886-0eb8-4a0e-bd89-4790e601eeba" CommandName="ExcelGetCellCommand" IsCommented="false" SelectionName="Get Cell" DefaultPause="0" LineNumber="146" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_ExcelCellAddress="D[vSumIndex]" v_userVariableName="vTotalHrs" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="VariableCommand" CommandID="c1be66b6-b678-4ba8-acf3-f3b91591d101" CommandName="VariableCommand" IsCommented="true" SelectionName="Set Variable" DefaultPause="0" LineNumber="147" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vDescription" v_Input="[vWorkLogBy] {Enter} Issue    Worklog Date    Time Spent (Hours) {Enter} [vDescription] {Enter}          [vTotalHrs]" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="VariableCommand" CommandID="e8e985fa-5f0d-4206-a05a-4c4dd7402392" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="148" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vDescription" v_Input="[vWorkLogBy], (Total Hours: [vTotalHrs])" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="VariableCommand" CommandID="99b1a818-525a-4e7c-8f56-119f48644589" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="149" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vTableRow" v_Input="[vTableRow] {'Description':'[vDescription]','QTY':'[vTotalHrs]','Rate':'[vRate]'}" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="VariableCommand" CommandID="4a82f4f9-fd52-4ebc-b6f4-2326a86ba8bc" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="150" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vDescription" v_Input="" />
+                </AdditionalScriptCommands>
+                <AdditionalScriptCommands>
+                  <ScriptCommand xsi:type="EndIfCommand" CommandID="128219d8-bee9-46ec-bfb8-723672b0c3b8" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="151" PauseBeforeExeucution="false" CommandEnabled="true" />
+                </AdditionalScriptCommands>
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="MessageBoxCommand" CommandID="5581eb90-08c1-46d7-980c-7dabe4689b1f" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="152" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vWorkLogBy]" v_AutoCloseAfter="0" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="MessageBoxCommand" CommandID="9deac2e7-9658-45ca-b6ce-150df868ab16" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="153" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vName]" v_AutoCloseAfter="0" />
+              </AdditionalScriptCommands>
+              <AdditionalScriptCommands>
+                <ScriptCommand xsi:type="EndIfCommand" CommandID="55c429fe-5161-467c-984c-f4f64704098e" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="154" PauseBeforeExeucution="false" CommandEnabled="true" />
+              </AdditionalScriptCommands>
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="CommentCommand" CommandID="6ec9dfc0-1940-417e-9123-1e7382d7d650" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="155" PauseBeforeExeucution="false" v_Comment="Row Number increment" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="VariableCommand" CommandID="036e4fcf-3586-42c1-9157-972e90c564cf" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="156" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vRowAddIndex" v_Input="[vRowAddIndex]+1" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="VariableCommand" CommandID="7475325e-baba-45a2-aef7-9664ff02f586" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="157" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vRowIndex" v_Input="[vRowIndex]+1" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="EndLoopCommand" CommandID="9f38aa3d-c810-4821-a84d-2564d0f259ce" CommandName="EndLoopCommand" IsCommented="false" SelectionName="End Loop" DefaultPause="0" LineNumber="158" PauseBeforeExeucution="false" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelSaveCommand" CommandID="6c5ebf8a-3645-4913-acd4-a97d8911f5bd" CommandName="ExcelSaveCommand" IsCommented="true" SelectionName="Save Workbook" DefaultPause="0" LineNumber="159" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelCloseApplicationCommand" CommandID="5c59cf5a-dbac-4aa2-a975-eaa0771f3713" CommandName="ExcelCloseApplicationCommand" IsCommented="false" SelectionName="Close Excel Application" DefaultPause="0" LineNumber="160" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="WLExcel" v_ExcelSaveOnExit="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="PauseCommand" CommandID="0585bb00-eb2b-48e4-b4aa-eb9008b93339" CommandName="PauseCommand" IsCommented="false" SelectionName="Pause Script" DefaultPause="0" LineNumber="161" PauseBeforeExeucution="false" CommandEnabled="true" v_PauseLength="4000" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SendAdvancedKeyStrokesCommand" CommandID="00a74526-4457-40ce-be31-235e904bdeba" CommandName="SendAdvancedKeyStrokesCommand" IsCommented="false" SelectionName="Send Advanced Hotkey" DefaultPause="0" LineNumber="162" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window">
+              <v_KeyActions>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="SendAdvancedKeyStrokesCommand042721.065334">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Key" type="xs:string" minOccurs="0" />
+                        <xs:element name="Action" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SendAdvancedKeyStrokesCommand042721.065334" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="SendAdvancedKeyStrokesCommand042721.065334" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <SendAdvancedKeyStrokesCommand042721.065334 diffgr:id="SendAdvancedKeyStrokesCommand042721.0653341" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Key>Enter [Return]</Key>
+                      <Action>Key Press (Down + Up)</Action>
+                    </SendAdvancedKeyStrokesCommand042721.065334>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_KeyActions>
+              <v_KeyUpDefault>Yes</v_KeyUpDefault>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="PauseCommand" CommandID="e72cf5d2-4ef9-429f-b198-b7c684c8e789" CommandName="PauseCommand" IsCommented="false" SelectionName="Pause Script" DefaultPause="0" LineNumber="163" PauseBeforeExeucution="false" CommandEnabled="true" v_PauseLength="3000" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SendAdvancedKeyStrokesCommand" CommandID="fdf91f85-c0b6-4472-9448-adcd6d1c7996" CommandName="SendAdvancedKeyStrokesCommand" IsCommented="false" SelectionName="Send Advanced Hotkey" DefaultPause="0" LineNumber="164" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window">
+              <v_KeyActions>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="SendAdvancedKeyStrokesCommand042721.065334">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Key" type="xs:string" minOccurs="0" />
+                        <xs:element name="Action" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SendAdvancedKeyStrokesCommand042721.065334" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="SendAdvancedKeyStrokesCommand042721.065334" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <SendAdvancedKeyStrokesCommand042721.065334 diffgr:id="SendAdvancedKeyStrokesCommand042721.0653341" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Key>Control [ControlKey]</Key>
+                      <Action>Key Down</Action>
+                    </SendAdvancedKeyStrokesCommand042721.065334>
+                    <SendAdvancedKeyStrokesCommand042721.065334 diffgr:id="SendAdvancedKeyStrokesCommand042721.0653342" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Key>W [W]</Key>
+                      <Action>Key Press (Down + Up)</Action>
+                    </SendAdvancedKeyStrokesCommand042721.065334>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_KeyActions>
+              <v_KeyUpDefault>Yes</v_KeyUpDefault>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="MessageBoxCommand" CommandID="57269cf7-ddf8-4e8b-9617-dd41e6394910" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="165" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[[vTableRow]]" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="AddDataRowCommand" CommandID="aaad6941-1002-4baa-b3dc-b01a8eb59121" CommandName="AddDataRowCommand" IsCommented="true" SelectionName="Append Data Row" DefaultPause="0" LineNumber="166" PauseBeforeExeucution="false" CommandEnabled="true" v_DataTableName="dtInvoiceDetails">
+              <v_ColumnCollection>[[vTableRow]]</v_ColumnCollection>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="JsonToDataTableCommand" CommandID="3597e877-77db-457e-84fe-28fc04db7a42" CommandName="JsonToDataTableCommand" IsCommented="false" SelectionName="Convert Json To Data Table" DefaultPause="0" LineNumber="167" PauseBeforeExeucution="false" CommandEnabled="true" v_Data="[[vTableRow]]" v_DataTabNameOutput="dtInvoiceDetails" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="PreviewDataTableCommand" CommandID="6329d54d-973f-4e5e-9213-fd32044f4bdb" CommandName="PreviewDataTableCommand" IsCommented="true" SelectionName="Preview Data Table" DefaultPause="0" LineNumber="168" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="dtInvoiceDetails" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="6f476f4c-b8b3-4576-b587-722603f9df23" CommandName="CommentCommand" IsCommented="true" SelectionName="Comment Line" DefaultPause="0" LineNumber="169" PauseBeforeExeucution="false" v_Comment="Document Automation Start for Genarate Invoice" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DocumentCreateApplicationCommand" CommandID="2c059949-3f0d-4bef-a67e-89d754f98080" CommandName="DocumentCreateApplicationCommand" IsCommented="false" SelectionName="Create Document Application" DefaultPause="0" LineNumber="170" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="InvoiceTemplate" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="8fcbc8a5-d803-4f54-9527-bc989e915734" CommandName="CommentCommand" IsCommented="true" SelectionName="Comment Line" DefaultPause="0" LineNumber="171" PauseBeforeExeucution="false" v_Comment="Provide path of invoice template document file" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DocumentLoadCommand" CommandID="38a6e5ea-9861-40c8-8e17-1887b719e54d" CommandName="DocumentLoadCommand" IsCommented="false" SelectionName="Load Document" DefaultPause="0" LineNumber="172" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="InvoiceTemplate" v_FilePath="C:\Intelgic\Invoice_Template\Invoice_Template_DemoProject.docx" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="b37df3d6-b1d8-4340-82e1-db7f73274562" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="173" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vInvoiceRow" v_Input="1" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DocumentReplaceCommand" CommandID="26cba735-93d6-4430-8bc1-2f7af5ab5c5d" CommandName="DocumentReplaceCommand" IsCommented="false" SelectionName="Find &amp; Replace Text" DefaultPause="0" LineNumber="174" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="InvoiceTemplate" v_FindText="vInvoiceNo" v_ReplaceText="INVOICE #INT/E/036/2[vListIndex]" v_IsCaseSensitive="No" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="35d9c5ee-6bb3-446c-ac15-e5140cbecdad" CommandName="VariableCommand" IsCommented="true" SelectionName="Set Variable" DefaultPause="0" LineNumber="175" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vInvoiceDate" v_Input="[DateTime.Now]" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="FormatDataCommand" CommandID="6669db51-6498-40aa-9584-08c0d4cb5925" CommandName="FormatDataCommand" IsCommented="false" SelectionName="Data Type Conversion" DefaultPause="0" LineNumber="176" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[DateTime.Now]" v_FormatType="Date" v_ToStringFormat="MM/dd/yyyy" v_applyToVariableName="vInvDate" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DocumentReplaceCommand" CommandID="aba6a42d-a75b-40b7-9f6e-918fb730a59b" CommandName="DocumentReplaceCommand" IsCommented="false" SelectionName="Find &amp; Replace Text" DefaultPause="0" LineNumber="177" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="InvoiceTemplate" v_FindText="vInvoiceDate" v_ReplaceText="vInvDate" v_IsCaseSensitive="No" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="d83ca984-c77e-4d50-9b4e-530ad27eab0f" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="178" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vGrandTotal" v_Input="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="BeginExcelDatasetLoopCommand" CommandID="48696626-3ef0-46e8-924b-4a07a89af60d" CommandName="BeginExcelDataSetLoopCommand" IsCommented="false" SelectionName="Loop Data Table" DefaultPause="0" LineNumber="179" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="dtInvoiceDetails" />
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="5f816650-c6ea-4cba-b8b6-8f776862532b" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="180" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="dtInvoiceDetails" v_ColumnParseType="By Column Index" v_ColumnParameter="0" v_applyToVariableName="vDescription" v_SortType="Default" v_SpecifiedRow="N/A" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="bdee0220-963c-418d-9073-bfa208c312d8" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="181" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="dtInvoiceDetails" v_ColumnParseType="By Column Index" v_ColumnParameter="1" v_applyToVariableName="vQTY" v_SortType="Default" v_SpecifiedRow="N/A" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="83da2441-56f2-4e07-b6ba-2af09dbcdc12" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="182" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="dtInvoiceDetails" v_ColumnParseType="By Column Index" v_ColumnParameter="2" v_applyToVariableName="vRate" v_SortType="Default" v_SpecifiedRow="N/A" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="CommentCommand" CommandID="80891e42-9222-472c-8a75-74fe15a4d3ce" CommandName="CommentCommand" IsCommented="true" SelectionName="Comment Line" DefaultPause="0" LineNumber="183" PauseBeforeExeucution="false" v_Comment="Total Hours Rate calculation" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="DocumentReplaceCommand" CommandID="9a41eb1c-5910-4067-9b1b-c83aa318945c" CommandName="DocumentReplaceCommand" IsCommented="false" SelectionName="Find &amp; Replace Text" DefaultPause="0" LineNumber="184" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="InvoiceTemplate" v_FindText="vDevName[vInvoiceRow]" v_ReplaceText="[vDescription]" v_IsCaseSensitive="No" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="DocumentReplaceCommand" CommandID="df22f8d7-879d-40a9-88f5-e12c8b95b8b9" CommandName="DocumentReplaceCommand" IsCommented="false" SelectionName="Find &amp; Replace Text" DefaultPause="0" LineNumber="185" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="InvoiceTemplate" v_FindText="vRates[vInvoiceRow]" v_ReplaceText="[vRate]" v_IsCaseSensitive="No" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="DocumentReplaceCommand" CommandID="08f2dbff-2cd4-4d86-a0f6-daa583828439" CommandName="DocumentReplaceCommand" IsCommented="false" SelectionName="Find &amp; Replace Text" DefaultPause="0" LineNumber="186" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="InvoiceTemplate" v_FindText="vTot[vInvoiceRow]" v_ReplaceText="[vQTY]*[vRate]" v_IsCaseSensitive="No" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="CommentCommand" CommandID="2b69573a-a2bc-4e00-88c0-c9c3243b18da" CommandName="CommentCommand" IsCommented="true" SelectionName="Comment Line" DefaultPause="0" LineNumber="187" PauseBeforeExeucution="false" v_Comment="Sub Total And Grand Total" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="VariableCommand" CommandID="ab70a65f-01f6-4752-bc89-d243a8042520" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="188" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vTotalAmt" v_Input="[vQTY]*[vRate]" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="VariableCommand" CommandID="0f460571-fa32-4c54-ab98-a787ecc27983" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="189" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vGrandTotal" v_Input="[vGrandTotal]+[vTotalAmt]" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="VariableCommand" CommandID="519241b4-a090-40e6-be08-961ebd2a489c" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="190" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vInvoiceRow" v_Input="[vInvoiceRow]+1" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="EndLoopCommand" CommandID="93a9c740-4074-4cc7-b31f-a739981e4568" CommandName="EndLoopCommand" IsCommented="false" SelectionName="End Loop" DefaultPause="0" LineNumber="191" PauseBeforeExeucution="false" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="4ec44422-f7db-4e21-8bdd-e913fcadbbe6" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="192" PauseBeforeExeucution="false" v_Comment="--Write Sub Total And Grand Total To word File" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DocumentReplaceCommand" CommandID="bccf5a22-7156-47f2-9b90-e41be688c74b" CommandName="DocumentReplaceCommand" IsCommented="false" SelectionName="Find &amp; Replace Text" DefaultPause="0" LineNumber="193" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="InvoiceTemplate" v_FindText="vSubTot" v_ReplaceText="[vGrandTotal]" v_IsCaseSensitive="No" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DocumentReplaceCommand" CommandID="aa25c721-5ced-40b1-83d7-ddbb85524487" CommandName="DocumentReplaceCommand" IsCommented="false" SelectionName="Find &amp; Replace Text" DefaultPause="0" LineNumber="194" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="InvoiceTemplate" v_FindText="vGrandTot" v_ReplaceText="[vGrandTotal]" v_IsCaseSensitive="No" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="af25b00c-7029-4375-b2ad-ec624f1e79d3" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="195" PauseBeforeExeucution="false" v_Comment="Provide the path for generated invoice to be saved" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="0993c14f-fcbe-4944-b3af-29224e0e5060" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="196" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vInvoicePath" v_Input="C:\Intelgic" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DocumentSaveCommand" CommandID="f015283b-b8c2-499b-a2fd-4f0222993a35" CommandName="DocumentSaveCommand" IsCommented="false" SelectionName="Save Document" DefaultPause="0" LineNumber="197" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="InvoiceTemplate" v_FilePath="[vInvoicePath]\Invoice_[vProjectName].docx" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="c897fb57-cf14-4a99-9d4a-1d64b336c3f0" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="198" PauseBeforeExeucution="false" v_Comment="--Convert Doc to PDF And--Send Email invoice" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="TryCommand" CommandID="b4693395-9ccb-4fb8-9219-6bf8cc95fe23" CommandName="TryCommand" IsCommented="false" SelectionName="Try" DefaultPause="0" LineNumber="199" PauseBeforeExeucution="false" CommandEnabled="true" />
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="CommentCommand" CommandID="b0b662c2-f9d5-4037-b4cc-cbe3b09ba985" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="200" PauseBeforeExeucution="false" v_Comment="Convert the file to PDF" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="WordToPdfCommand" CommandID="5cc24004-5568-42aa-86f9-29e0fa716db9" CommandName="WordToPdfCommand" IsCommented="false" SelectionName="Word to Pdf Conversion" DefaultPause="0" LineNumber="201" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseFilePath="[vDrive]\Appstango\Invoice_[vProjectName].docx" v_PdfFileFilledPath="[vDrive]\Appstango\Invoice_[vProjectName].pdf" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="CatchExceptionCommand" CommandID="c39f9f73-62d7-4f71-9e31-5474b9b2e567" CommandName="CatchExceptionCommand" IsCommented="false" SelectionName="Catch Exception" DefaultPause="0" LineNumber="202" PauseBeforeExeucution="false" v_Comment="Items in this section will run if error occurs" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="CommentCommand" CommandID="ab107fca-6272-4a4d-afed-46d6eb798b51" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="203" PauseBeforeExeucution="false" v_Comment="This section executes if error occurs above" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="EndTryCommand" CommandID="f44c9ede-51dd-4da1-952f-db3c9cbfafa8" CommandName="EndTryCommand" IsCommented="false" SelectionName="End Try" DefaultPause="0" LineNumber="204" PauseBeforeExeucution="false" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="SMTPSendEmailCommand" CommandID="961f6238-5e73-4a7d-8760-63208d30adb8" CommandName="SMTPCommand" IsCommented="false" SelectionName="Send SMTP Email" DefaultPause="0" LineNumber="205" PauseBeforeExeucution="false" CommandEnabled="true" v_SMTPHost="smtp.gmail.com" v_SMTPPort="587" v_Ssl="true" v_SMTPUserName="solutionappsbee12@gmail.com" v_SMTPPassword="vbdvdextsoimpczk" v_SMTPFromEmail="solutionappsbee12@gmail.com" v_SMTPToEmail="[vEmailTo]" v_SMTPSubject="Invoice From Intelgic" v_SMTPBody="&lt;p&gt;Dear Customer,&lt;/p&gt;&lt;p&gt;I hope you’re well! Please see attached invoice number for Software Services, due on [vEndDate]. Don’t hesitate to reach out if you have any questions.&lt;/p&gt;&lt;p&gt;Kind regards,&lt;/P&gt;&lt;p&gt;Digital Assistance,&lt;br&gt;&#xD;&#xA;Process Bot&lt;/P&gt;&#xD;&#xA;" v_SMTPAttachment="[vDrive]\Appstango\Invoice_[vProjectName].pdf" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="2b2417fb-4ebd-4048-bd4a-e3be569e7f92" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="206" PauseBeforeExeucution="false" v_Comment="--Update Project List Excel for Next Invoice Date" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DateCalculationCommand" CommandID="676be0bd-9dfd-4128-ae9e-18c346aac535" CommandName="DateCalculationCommand" IsCommented="false" SelectionName="Date Calculation" DefaultPause="0" LineNumber="207" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vEndDate]" v_CalculationMethod="Add Days" v_Increment="1" v_ToStringFormat="yyyy-MM-dd" v_applyToVariableName="vEndDate" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelCreateApplicationCommand" CommandID="42230b2b-a47d-4c61-9a9a-3b860f2118cb" CommandName="ExcelOpenApplicationCommand" IsCommented="false" SelectionName="Create Excel Application" DefaultPause="0" LineNumber="208" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="UpdateProjectList" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelOpenWorkbookCommand" CommandID="4d085f94-4a12-4438-b801-3f87437e689d" CommandName="ExcelOpenWorkbookCommand" IsCommented="false" SelectionName="Open Workbook" DefaultPause="0" LineNumber="209" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="UpdateProjectList" v_FilePath="[vProjectPath]" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelSetCellCommand" CommandID="0b2a12d7-d840-4066-aedb-64ac3acb76f8" CommandName="ExcelSetCellCommand" IsCommented="false" SelectionName="Set Cell" DefaultPause="0" LineNumber="210" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="UpdateProjectList" v_TextToSet="[vEndDate]" v_ExcelCellAddress="F[vListIndex]" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelSaveCommand" CommandID="044eef64-3804-43fe-aa94-dc45eca8e9d1" CommandName="ExcelSaveCommand" IsCommented="false" SelectionName="Save Workbook" DefaultPause="0" LineNumber="211" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="UpdateProjectList" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ExcelCloseApplicationCommand" CommandID="910d4fb7-0b1e-4a12-bdf7-56a37e8e7c41" CommandName="ExcelCloseApplicationCommand" IsCommented="false" SelectionName="Close Excel Application" DefaultPause="0" LineNumber="212" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="UpdateProjectList" v_ExcelSaveOnExit="false" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="EndIfCommand" CommandID="e2b022f7-3115-44de-8aaf-534a9f7f60fb" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="213" PauseBeforeExeucution="false" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="EndIfCommand" CommandID="9cab26d0-020f-45b0-ab9e-31c6761bdb09" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="214" PauseBeforeExeucution="false" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="CommentCommand" CommandID="24151a20-c69d-4830-826e-07dfac0e75f6" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="215" PauseBeforeExeucution="false" v_Comment="--Bellow End of Project List Loop" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="VariableCommand" CommandID="568d0f29-161f-4d4a-8d70-a5ef258093c0" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="216" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vListIndex" v_Input="[vListIndex]+1" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="BeginIfCommand" CommandID="38963fd3-dbaf-436f-a46a-c59fbca0a8e5" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="217" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="File Exists">
+          <v_IfActionParameterTable>
+            <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+              <xs:element name="I6AcPionPara53Table072021.025355">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                    <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I6AcPionPara53Table072021.025355" msdata:UseCurrentLocale="true">
+                <xs:complexType>
+                  <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="I6AcPionPara53Table072021.025355" />
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:schema>
+            <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+              <DocumentElement>
+                <I6AcPionPara53Table072021.025355 diffgr:id="I6AcPionPara53Table072021.0253551" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>File Path</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>[vDownloadPath]\[vFileName]</Parameter_x0020_Value>
+                </I6AcPionPara53Table072021.025355>
+                <I6AcPionPara53Table072021.025355 diffgr:id="I6AcPionPara53Table072021.0253552" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>True When</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>It Does Exist</Parameter_x0020_Value>
+                </I6AcPionPara53Table072021.025355>
+              </DocumentElement>
+            </diffgr:diffgram>
+          </v_IfActionParameterTable>
+        </ScriptCommand>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="cc30b949-f329-4c70-94ef-1ffe743b55ed" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="218" PauseBeforeExeucution="false" v_Comment="Move to WorkLogs Directory " CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="MoveFileCommand" CommandID="b55d94bb-332e-4d5f-b903-bcd6fdfc0406" CommandName="MoveFileCommand" IsCommented="false" SelectionName="Move/Copy File" DefaultPause="0" LineNumber="219" PauseBeforeExeucution="false" CommandEnabled="true" v_OperationType="Move File" v_SourceFilePath="[vDownloadPath]\[vFileName]" v_DestinationDirectory="[vDownloadPath]\WorkLogs" v_CreateDirectory="Yes" v_DeleteExisting="Yes" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="EndIfCommand" CommandID="b6b13cd7-8c82-4929-b2d4-a7348a23c3fb" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="220" PauseBeforeExeucution="false" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="EndLoopCommand" CommandID="b330fafb-42c4-4d01-89fb-8fc12b757a7b" CommandName="EndLoopCommand" IsCommented="false" SelectionName="End Loop" DefaultPause="0" LineNumber="221" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="1b9d044f-3667-42d0-9016-89b330ffa918" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="222" PauseBeforeExeucution="false" v_Comment="End Of Main Project List Loop" CommandEnabled="true" />
+    </ScriptAction>
+  </Commands>
+  <Variables />
+</Script>

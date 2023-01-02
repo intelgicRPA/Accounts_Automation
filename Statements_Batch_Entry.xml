@@ -14,7 +14,7 @@
       <ScriptCommand xsi:type="SetWindowStateCommand" CommandID="ed61d9e3-727a-45f0-991a-7a108639c00e" CommandName="SetWindowStateCommand" IsCommented="false" SelectionName="Set Window State" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName=" Intuit QuickBooks Enterprise Solutions: Professional Services 22.0" v_WindowState="Maximize" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="RESTCommand" CommandID="bc4e6b5b-50da-4fe0-81b2-9ffe4fb6c9d3" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://intelgic_ai_api_url.com" v_APIEndPoint="/api/v1/bot/statement-details" v_APIMethodType="GET" v_userVariableName="apiResponse" v_RequestFormat="Json">
+      <ScriptCommand xsi:type="RESTCommand" CommandID="bc4e6b5b-50da-4fe0-81b2-9ffe4fb6c9d3" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://intelgic_portal_api_url.com" v_APIEndPoint="/api/v1/bot/statement-details" v_APIMethodType="GET" v_userVariableName="apiResponse" v_RequestFormat="Json">
         <v_AdvancedParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
             <xs:element name="A1vRESTPara30Table120122.043037">
@@ -1967,7 +1967,7 @@
         </ScriptCommand>
       </AdditionalScriptCommands>
       <AdditionalScriptCommands>
-        <ScriptCommand xsi:type="RESTCommand" CommandID="9e59fa81-c375-4f2d-a07b-81579b370906" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="93" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://intelgic_ai_api_url.com" v_APIEndPoint="/api/v1/bot/update-statement-details" v_APIMethodType="POST" v_userVariableName="updateResponse" v_RequestFormat="Json">
+        <ScriptCommand xsi:type="RESTCommand" CommandID="9e59fa81-c375-4f2d-a07b-81579b370906" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="93" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://intelgic_portal_api_url.com" v_APIEndPoint="/api/v1/bot/update-statement-details" v_APIMethodType="POST" v_userVariableName="updateResponse" v_RequestFormat="Json">
           <v_AdvancedParameters>
             <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
               <xs:element name="A1vRESTPara30Table120122.043037">
